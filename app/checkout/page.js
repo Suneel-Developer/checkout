@@ -59,7 +59,7 @@ const Checkout = () => {
                             </div>
 
                             <p className='text-gray-300 text-sm leading-[1.5]'>
-                                We promise to only send you important emails about the service quality. Youll also receive news about special offers, but if you don't want to get those, drop us a note at
+                                We promise to only send you important emails about the service quality. Youll also receive news about special offers, but if you don not want to get those, drop us a note at
                                 <Link href="mailto:support@saily.com" target='_blank' className='underline ml-1'>support@saily.com</Link>
                             </p>
                         </div>
