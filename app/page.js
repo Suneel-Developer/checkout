@@ -1,9 +1,16 @@
-import Checkout from "./checkout/page";
+"use client";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-export default function Home() {
-  return (
-    <main>
-      <Checkout />
-    </main>
-  );
-}
+const Page = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Redirect to the default language
+    router.push("/en");
+  }, [router]);
+
+  return null; // or a loading spinner
+};
+
+export default Page;
