@@ -1,20 +1,8 @@
 "use client";
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
 import LanguageDropdown from "./LanguageDropdown";
 import Link from "next/link";
 
 const Header = () => {
-  const { t } = useTranslation(); 
-  const [currentLang, setCurrentLang] = useState("en");
-
-  // useEffect(() => {
-  //   const storedLang = localStorage.getItem("selectedLanguage"); 
-  //   const langFromPath = window.location.pathname.split("/")[1]; 
-  //   const finalLang = storedLang || (langFromPath === "de" ? "de" : "en"); 
-  //   setCurrentLang(finalLang); 
-  // }, []);
-
   return (
     <header>
       <div className="bg-[#1b3b6b] py-5 px-4">
@@ -30,7 +18,7 @@ const Header = () => {
           <div className="flex items-center gap-8">
             <div className="hidden lg:flex items-center gap-2 text-white text-sm">
               <img src="/assets/check-green.svg" alt="check-green" />
-              <p> {t("header.customerService")}</p>
+              <p> Customer Service</p>
             </div>
 
             <LanguageDropdown />
